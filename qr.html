@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thunni Collection - Thrift Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="C:\Users\ADMIN\Desktop\vsproject\.vscode\logo.jpg.jpeg" type="image/x-icon">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+  body{background:linear-gradient(rgba(0, 0, 0, 0.15),rgba(233, 225, 236, 0.92)),
+    url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3') no-repeat center center fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+  }
+  header{background-size: cover;
+    background-position:center ;
+    text-align:center;
+    padding:30px 15px
+}
+  header img{width:260px;max-width:90%}
+  nav{margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  nav a{color:#d4af37;text-decoration:none;font-weight:bold;border:1px solid #d4af37;padding:8px 18px;border-radius:25px;font-size:14px}
+  nav a:hover{background:#d4af37;color:#000}
+
+  .container{max-width:1100px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:350px 1fr;gap:20px}
+  .card{background:rgb(49, 25, 130);padding:25px;border-radius:14px;box-shadow:0 4px 15px rgba(0,0,0,0.08)}
+  .card h2{color:#000;margin-bottom:12px;border-left:4px solid #d4af37;padding-left:10px}
+
+  .products{max-width:1100px;margin:10px auto;padding:0 20px}
+  .products h2{text-align:center;margin-bottom:20px;color:#000}
+  .product-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:20px}
+  .product-item{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.08);text-align:center}
+  .product-item img{width:100%;height:280px;object-fit:cover}
+  .product-item .info{padding:15px}
+  .product-item .info b{display:block;margin-bottom:5px}
+  .product-item .info span{color:#d4af37;font-weight:bold}
+
+  .login-wrap{max-width:1100px;margin:30px auto;padding:0 20px;display:flex;justify-content:center}
+  .login-form{background:rgb(35, 9, 82);padding:28px;border-radius:14px;width:100%;max-width:380px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+  .login-form input{width:100%;padding:12px;margin:8px 0 12px;border:1px solid #ccc;border-radius:8px}
+  .login-form button{width:100%;padding:12px;background:#0e0e0e;color:#d4af37;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
+
+  @media(max-width:800px){
+    .container{grid-template-columns:1fr}
+    .product-grid{grid-template-columns:1fr}
+    .product-item img{height:auto}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\logo.jpg.jpeg" alt="Thunni Collection Logo">
+  <nav>
+    <a href="https://www.instagram.com/thunnicollection_1/">Instagram</a>
+    <a href="https://wa.me/254795542233">WhatsApp</a>
+    <a href="tel:+254795542233">Call</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p><b>0113942447</b><br><b>0795542233</b><br><b>0799282739</b></p>
+    <p style="margin-top:10px">Magongo • Changamwe • Mombasa</p>
+    <br>
+    <h2>What We Sell</h2>
+    <p>Caps • Sweatpants • Shoes • Jerseys • Deras </p>
+    <p style="margin-top:10px;color:green;font-weight:bold;">✓ Free Delivery in Mombasa</p>
+  </div>
+  <div class="card">
+    <h2>About Thunni Collection</h2>
+    <p>Managed by Swalha Swaleh - upcoming thrifter who loves vintage fashion. We dress both men & women in trending styles at affordable prices. Each piece is carefully selected.</p>
+  </div>
+</div>
+
+<div class="products">
+  <h2>Our Latest Collection</h2>
+  <div class="product-grid">
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\men.jpg.jpeg" alt="Product 1">
+      <div class="info"><b>Sweatpant</b><span>Ksh 500</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\memory.jpg.jpeg"alt="Product 2">
+      <div class="info"><b>Sweatpant</b><span>Ksh 500</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\mafia.jpg.jpeg" alt="Product 3">
+      <div class="info"><b>Sweatpant</b><span>Ksh 500</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\shoes.jpg.jpeg"alt="Product 4">
+      <div class="info"><b>Shoes</b><span>Ksh 1500</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\jerseys.jpg.jpeg"alt="Product 5">
+      <div class="info"><b>Jersey</b><span>Ksh 700</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\cap.pjg.jpeg"alt="Product 6">
+      <div class="info"><b>Cap</b><span>Ksh 350</span></div>
+    </div>
+    <div class="product-item">
+      <img src="C:\Users\ADMIN\Desktop\vsproject\.vscode\dera2.jpg.jpeg" alt="Product 7">
+      <div class="info"><b>Deras</b><span>Ksh 350</span></div>
+  </div>
+</div>
+
+<div class="login-wrap">
+  <form class="login-form">
+    <h2 style="text-align:center;margin-bottom:15px">Login to Shop</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <p style="text-align:center;margin-top:10px;font-size:14px">Don't have an account? <a href="#" style="color:#d4af37;text-decoration:none">Sign Up</a></p>
+    <p style="text-align:center;margin-top:10px;font-size:14px"><a href="#" style="color:#d4af37;text-decoration:none">Forgot Password?</a></p>
+  </form>
+</div>
+<div class=""card" style="max-width:1100px;margin:30px auto;padding:0 20px;text-align:center">
+  <h2>Follow Us on Instagram</h2>
+  <p>Stay updated with our latest collections and offers by following us on Instagram.</p>
+  <a href="https://www.instagram.com/thunnicollection_1/" style="display:inline-block;margin-top:10px;padding:10px 20px;background:#d4af37;color:#000;text-decoration:none;border-radius:8px;font-weight:bold">Follow</a>
+</div>
+<div class="card" style="max-width:1100px;margin:30px auto;padding:0 20px;text-align:center">
+  <h2>Contact Us</h2>
+  <p>If you have any questions or inquiries, feel free to reach out to us via WhatsApp or call us directly.</p>
+  <a href="https://wa.me/254795542233" style="display:inline-block;margin-top:10px;padding:10px 20px;background:#d4af37;color:#000;text-decoration:none;border-radius:8px;font-weight:bold">WhatsApp</a>
+  <a href="tel:+254795542233" style="display:inline-block;margin-top:10px;padding:10px 20px;background:#d4af37;color:#000;text-decoration:none;border-radius:8px;font-weight:bold">Call</a>
+
+</div>
+
+</body>
+</html>
